@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+    <section id="headernavbar">
+      <img src="assets/travel.png" alt="Logo">
+      <nav class="navigation">
+        <a href="/">Home</a>
+        <a href="#ourpackage">Our Package</a>
+        <a href="#callus">Call Us</a>
+      </nav>
+    </section>
+    <hr id="line">
+    <section id="headertitle">
+      <h1>Your Trusted Travel Agent's</h1>
+      <h3 id="subtitle">Your Happiness is Our Happiness</h3>
+    </section>
+  </header>
+  <main>
+    <section id="callUs">
+      <div class="w3-content w3-section">
+        <img class="autoSlide" src="assets/destinasi1.jpeg">
+        <img class="autoSlide" src="assets/destinasi2.jpg">
+        <img class="autoSlide" src="assets/destinasi3.jpg">
+        <p id="choose">"These are the Best Travel Destinations"</p>
+        <p id="choose1">John Doe</p>
+      </div>
+      <div class="containerform">
+        <h3 class="titleSubtitle">Contact Us</h3>
+        <h5 class="titleSubtitle1">Sales akan menghubungi anda dalam 1x24 jam setelah data kami terima.</h5>
+        <form id="contactForm" onsubmit="return formValidation();">
+          <div class="form-row">
+            <div class="form-col">
+              <label for="yname" class="form-label">Your Name</label>
+              <input type="text" id="yname" name="yname" class="form-input" placeholder="Enter Name">
+            </div>
+            <div class="form-col">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="Enter Email">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-col">
+              <label for="interest" class="form-label">What are you interested in?</label>
+              <select id="interest" name="interest" class="form-select">
+                <option value="">Pilih</option>
+                <option value="Pantai">Pantai</option>
+                <option value="Pegunungan">Pegunungan</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-col">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Type your message here"></textarea>
+            </div>
+          </div>
+          <span id="error-message" style="color: red;"></span>
+          <div class="form-row">
+            <div class="form-col">
+              <input type="submit" class="form-submit" value="Send">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="card-white">
+      <section id="ourpackage">
+        <h2>Our Package</h2>
+      </section>
+    </div>
+    <section id="destination">
+      <div class="row">
+          <div class="column">
+              <div class="card">
+                  <table>
+                      <tr>
+                          <td><img src="assets/bali.png" alt="Bali"></td>
+                          <td>
+                              <h3>Bali</h3>
+                              <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <div class="card">
+                  <table>
+                      <tr>
+                          <td><img src="assets/japan.png" alt="Japan"></td>
+                          <td>
+                              <h3>Japan</h3>
+                              <p>Travel dan wisata di Jepang. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+          <div class="column">
+              <div class="card">
+                  <table>
+                      <tr>
+                          <td><img src="assets/singapore.png" alt="Singapore"></td>
+                          <td>
+                              <h3>Singapore</h3>
+                              <p>Travel dan wisata di Singapura. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <div class="card">
+                  <table>
+                      <tr>
+                          <td><img src="assets/bandung.jpg" alt="Bandung"></td>
+                          <td>
+                              <h3>Bandung</h3>
+                              <p>Travel dan wisata di Bandung. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+          <div class="column">
+              <div class="card">
+                  <table>
+                      <tr>
+                          <td><img src="assets/surabaya.png" alt="Surabaya"></td>
+                          <td>
+                              <h3>Surabaya</h3>
+                              <p>Travel dan wisata di Surabaya. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <div class="card">
+                  <table>
+                      <tr>
+                          <td><img src="assets/jakarta.png" alt="Jakarta"></td>
+                          <td>
+                              <h3>Jakarta</h3>
+                              <p>Travel dan wisata di Jakarta. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </section>  
+    <div class="card-line">
+      <hr>
+      <section id="callus">
+      <h2>Your Closing Argument Headline</h2>
+      <h4>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</h4>
+      <a id="calltoaction" href="tel:+6281234567890">CALL TO ACTION</a>
+      </section>
+      <hr>
+    </div>
+  </main>
+  <footer>
+    <img src="assets/travel.png" alt="Logo"><br>
+    <a href="#">Terms of Service</a>
+    <a href="#">Privacy Policy</a>
+    <p>2023 Travels</p>
+  </footer>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/backtotop.png"></button>
+  <script src="js/script.js"></script>
+</body>
+</html>
